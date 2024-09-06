@@ -36,10 +36,13 @@ bash
 git clone https://github.com/TejaKasi27/nn_graph.git
 cd nn_graph
 
-Step 2: Create a Virtual Environment
+### Step 2: Create a Virtual Environment
+
 It is recommended to use a virtual environment to avoid dependency conflicts:
-bash
+
+```bash
 python -m venv venv
+
 
 Step 3: Activate the Virtual Environment
 On Windows:
