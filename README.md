@@ -31,12 +31,12 @@ nn_graph/
 ## Installation
 To install the nn_graph library locally, follow the steps below:
 
-Step 1: Clone the Repository
+## Step 1: Clone the Repository
 bash
 git clone https://github.com/TejaKasi27/nn_graph.git
 cd nn_graph
 
-### Step 2: Create a Virtual Environment
+## Step 2: Create a Virtual Environment
 
 It is recommended to use a virtual environment to avoid dependency conflicts:
 
@@ -44,7 +44,7 @@ It is recommended to use a virtual environment to avoid dependency conflicts:
 python -m venv venv
 
 
-Step 3: Activate the Virtual Environment
+## Step 3: Activate the Virtual Environment
 On Windows:
 
 bash
@@ -54,7 +54,7 @@ On macOS/Linux:
 bash
 source venv/bin/activate
 
-Step 4: Install Dependencies
+## Step 4: Install Dependencies
 Install the required dependencies using pip. These are listed in the setup.py and can be installed via:
 
 bash
@@ -64,7 +64,7 @@ Alternatively, you can install dependencies through the setup.py script:
 bash
 pip install -e .
 
-Usage
+## Usage
 Once installed, you can use the nn_graph library to create and visualize network graphs. Here's a basic usage example:
 
 python
@@ -78,22 +78,23 @@ graph = SimpleNNNetworkGraph(file_path, show_info=True)
 
 # Draw and display the graph
 graph.draw_graph()
-In this example:
+## In this example:
 
 The SimpleNNNetworkGraph class is used to load the network description from a JSON file.
 You can customize the graph appearance by passing parameters like show_info for showing additional edge information.
-Running Tests
+
+## Running Tests
 Tests for nn_graph are located in the tests/ directory. You can run the tests with the following command:
 
 bash
 python -m unittest discover tests
 This command will execute all the unit tests in the tests/ directory.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE.txt file for details.
 
-Contributing
+## Contributing
 Contributions are welcome! If you'd like to contribute, feel free to fork the repository, make improvements, and submit a pull request.
 
-Acknowledgments
+## Acknowledgments
 This project was developed as part of an initiative to provide automated tools for visualizing neuronal networks. Special thanks to the computational neuroscience community for providing the foundation for this work.
