@@ -1,16 +1,17 @@
 # nn_graph-library
-nn_graph is a Python library designed for automating the generation of network graph visualizations for simple neuronal models encoded in JSON format. This library is particularly valuable for researchers in computational neuroscience, enabling them to visualize neuronal networks clearly and efficiently.
 
-Features
-Automated Graph Generation: Easily generate network diagrams from JSON-based models.
-Graph Customization: Flexible options to customize node sizes, edge styles, colors, and more.
-NeuroMLlite Compatible: Built to work seamlessly with models described in JSON format, including those in NeuroMLlite.
-NEST Support: Complements NEST (NEural Simulation Tool) by adding enhanced visual representations of network structures.
-Directory Structure
+`nn_graph` is a Python library designed for automating the generation of network graph visualizations for simple neuronal models encoded in JSON format. This library is particularly valuable for researchers in computational neuroscience, enabling them to visualize neuronal networks clearly and efficiently.
+
+## Features
+- **Automated Graph Generation**: Easily generate network diagrams from JSON-based models.
+- **Graph Customization**: Flexible options to customize node sizes, edge styles, colors, and more.
+- **NeuroMLlite Compatible**: Built to work seamlessly with models described in JSON format, including those in NeuroMLlite.
+- **NEST Support**: Complements NEST (NEural Simulation Tool) by adding enhanced visual representations of network structures.
+
+## Directory Structure
 The structure of the nn_graph repository is as follows:
 
-bash
-Copy code
+```bash
 nn_graph/
 │
 ├── nn_graph/                  # Core library directory
@@ -26,47 +27,44 @@ nn_graph/
 ├── README.md                  # Readme file (this file)
 ├── setup.py                   # Setup file for packaging and installation
 └── test.py                    # Script for testing functionality
+
 Installation
 To install the nn_graph library locally, follow the steps below:
 
 Step 1: Clone the Repository
 bash
-Copy code
 git clone https://github.com/TejaKasi27/nn_graph.git
 cd nn_graph
+
 Step 2: Create a Virtual Environment
 It is recommended to use a virtual environment to avoid dependency conflicts:
-
 bash
-Copy code
 python -m venv venv
+
 Step 3: Activate the Virtual Environment
 On Windows:
 
 bash
-Copy code
 .\venv\Scripts\activate
 On macOS/Linux:
 
 bash
-Copy code
 source venv/bin/activate
+
 Step 4: Install Dependencies
 Install the required dependencies using pip. These are listed in the setup.py and can be installed via:
 
 bash
-Copy code
 pip install -r requirements.txt
 Alternatively, you can install dependencies through the setup.py script:
 
 bash
-Copy code
 pip install -e .
+
 Usage
 Once installed, you can use the nn_graph library to create and visualize network graphs. Here's a basic usage example:
 
 python
-Copy code
 from nn_graph import SimpleNNNetworkGraph
 
 # Path to your JSON model file
@@ -85,7 +83,6 @@ Running Tests
 Tests for nn_graph are located in the tests/ directory. You can run the tests with the following command:
 
 bash
-Copy code
 python -m unittest discover tests
 This command will execute all the unit tests in the tests/ directory.
 
