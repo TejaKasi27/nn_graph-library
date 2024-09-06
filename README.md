@@ -28,7 +28,7 @@ nn_graph/
 ├── setup.py                   # Setup file for packaging and installation
 └── test.py                    # Script for testing functionality
 
-**Installation**
+- **Installation**
 To install the nn_graph library locally, follow the steps below:
 
 Step 1: Clone the Repository
